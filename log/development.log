@@ -403,3 +403,11 @@ Started GET "/songs" for 24.146.255.14 at 2018-03-15 21:04:24 +0000
 Cannot render console from 24.146.255.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
 Processing by SongsController#index as HTML
   [1m[36mSong Load (1.4ms)[0m  [1mSELECT "songs".* FROM "songs"[0m
+  [1m[35mArtist Load (0.2ms)[0m  SELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mArtist Load (0.2ms)[0m  [1mSELECT  "artists".* FROM "artists" WHERE "artists"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered songs/index.html.erb within layouts/application (23.5ms)
+Completed 200 OK in 39ms (Views: 32.7ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/assets/application.self-e80e8f2318043e8af94dddc2adad5a4f09739a8ebb323b3ab31cd71d45fd9113.css?body=1" for 24.146.255.14 at 2018-03-15 21:04:25 +0000
+Cannot render console from 24.146.255.14! Allowed networks: 127.0.0.1, ::1, 127.0.0.0/127.255.255.255
